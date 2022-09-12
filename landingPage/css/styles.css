@@ -1,0 +1,168 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid  */
+}
+
+/* Header */
+.header { 
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5em;
+    margin-top: -10vh;
+}
+ul { 
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0em;
+    gap: 1em;
+    margin-right: 1em;
+}
+a { 
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+.heroContainer { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em;
+    
+}
+.heroText { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 1 1em;
+    min-width: 300px;
+}
+.heroText h1 { 
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0 0 0 0;
+}
+.heroText p { 
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    margin: 10px 0 12px 0;
+}
+button { 
+    background-color: #3882F6;
+    border: none; 
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 20px;
+}
+.heroImage { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 1em;
+    padding: 2px
+}
+.heroImage img { 
+    display: flex;
+    flex-grow: 0.4;
+}
+.footer { 
+    background-color: #1F2937;
+}
+
+/* Section-1 */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 100vh;
+    
+}
+
+.title { 
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.cardContainer { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2em;
+    max-width: 15em;
+    margin-top: 1em;
+    
+}
+
+.cardImage { 
+    /* border: 1px black solid; */
+}
+
+.cardText { 
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Section-2 */
+
+.section-2 { 
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75vh;
+    padding: 2em;
+}
+
+.quote { 
+    font-style: italic;
+    color: #1F2937;
+    font-size: 36px;
+    margin-bottom: .5em;
+}
+
+.author { 
+    font-weight: 900;
+    text-align: right;
+}
+
+/* Section-3 */
+
+.callToAction { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+/* Footer */
+
+.footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: #E5E7EB;
+}
