@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foundationalJS</title>
+
+</head>
+<body>
+  <p>Open the console log</p>
+    <script>
+    // Your JavaScript goes here!
+    // console.log("Hello, World!")
+    // console.log(23 + 97);
+    // console.log(23 + 97 + 23 + 39 + 1 +1);
+    // console.log((4+6+9)/77);
+    // let a = 10; 
+    // console.log(a);
+    // console.log(9 * a);
+    // let b = 7 * a; 
+    // console.log (b)
+
+    // let max = 57; 
+    // let actual = max - 13; 
+    // let percentage = actual/max; 
+    
+      //Problem 1
+      // Fully written out
+      // function add7(inputNumber) {
+      //   return inputNumber + 7;      
+      // }
+      //Arrow notation
+      let add7 = (inputNum) => inputNum + 7; 
+        
+      // Problem 2
+      let multiply = (a, b) => a*b; 
+      let sum = (a, b) => a + b;
+
+      // Problem 3 
+      let capitalize = (wordInput) => {
+        let firstLetter = wordInput.charAt(0);
+        let restOfWord = wordInput.slice(1);
+        // console.log(firstLetter);
+        // console.log(restOfWord);
+        return firstLetter.toUpperCase() + restOfWord.toLowerCase();
+      }
+
+      //Problem 4 
+      let lastLetter = (wordInput2) => { 
+        let lastLetter2 = wordInput2.slice(-1)
+        return lastLetter2
+      }
+
+      
+
+  </script>
+</body>
+</html>
