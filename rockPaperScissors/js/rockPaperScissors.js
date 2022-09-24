@@ -1,4 +1,3 @@
-// console.log('This is to make sure CL is working');
 
 // Initial Constants
 const rps = ['rock', 'paper', 'scissors'] 
@@ -8,27 +7,27 @@ let playerWins = 0;
 let computerWins = 0;
 let draws = 0;
 
+// Function that randomly chooses rock, paper or scissors for the computer
 let getComputerChoice = () => { 
     let randomComputerChoice = rps[Math.floor((Math.random() * rps.length))];
     return randomComputerChoice;
 };
-// let computerSelection = getComputerChoice();
 
-// console.log(computerSelection);
-
+// Function that allows the player to choose either rock paper or scissors
 let playerSelectionFunction = () => {
     playerPrompt = (prompt("Enter 'rock', 'paper' or 'scissors'")).toLowerCase();
     return playerPrompt;
 } 
-// let playerSelection = playerSelectionFunction();
 
-// console.log(playerSelection);
-
+// Function that plays a single round of rock, paper, scissors
 let playRound = (computerSelection, playerSelection) => {
     // Game is played out
-    if ((playerSelection == 'rock' && computerSelection == 'scissors') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissors' && computerSelection == 'paper')) {
+    if 
+        ((playerSelection == 'rock' && computerSelection == 'scissors') || 
+        (playerSelection == 'paper' && computerSelection == 'rock') || 
+        (playerSelection == 'scissors' && computerSelection == 'paper')) {
         playerWins += 1;
-        return `Congrats you win ${playerSelection} beats ${computerSelection}`;
+        return `Congrats you win. Your selection of: ${playerSelection}, beats the computers selection of: ${computerSelection},`;
     } else if (playerSelection == computerSelection){
         draws += 1;
         return `Its a draw you both selected ${playerSelection}`;
@@ -38,9 +37,7 @@ let playRound = (computerSelection, playerSelection) => {
     }  
 }
 
-// console.log(`The computer picked ${computerSelection}`);
-// console.log(`You picked ${playerSelection}`);
-
+// Function that combines the functions of getComputerChoice, playerSelection and playRound 
 let game = () => {
     computerSelection = getComputerChoice();
     // console.log(computerSelection);
@@ -49,7 +46,7 @@ let game = () => {
     return playRound(playerSelection, computerSelection)
 }
 
-// console.log(game());
+// Function that plays the 'game' function 5 times. Whilst also keeping score of the results
 let letsPlay = () => {
     for (let i = 0; i < 5; i++) {
         console.log(game());
@@ -63,13 +60,3 @@ let letsPlay = () => {
         console.log('Yay you won');
     }
 }
-
-
-
-
-
-// if (playerSelection == 'rock' || playerSelection == 'paper' ||playerSelection == 'scissors') {
-//     prompt("Thank you");
-// } else {
-//     playerSelection = prompt("Please enter a valid selection of either 'rock', 'paper' or 'scissors'")
-// }
